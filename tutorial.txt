@@ -1,0 +1,7 @@
+docker login -u user_name
+
+docker build -t runpod-exllamav2 .
+
+docker tag runpod-exllamav2 user_name/runpod-exllamav2:v0.1
+
+docker push user_name/runpod-exllamav2:v0.1
